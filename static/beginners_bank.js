@@ -13,12 +13,12 @@ if (username != inputUsername) {
 
     alert("Invalid username");
 }
-elseif (password != inputPassword) {
+else if (password != inputPassword) {
 
   alert("Incorrect password");
 }
 
-elseif (amount<inputAmount) {
+else if (amount<inputAmount) {
 
   document.getElementById('result').innerHTML = ("Insufficient balance...");
 }
