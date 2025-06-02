@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>calculator</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'tip_calculator.css' %}">
+  </head>
+  <body>
+    <p id ='heading_calculator'>Tip calculator</p>
+    <div class="calculator_body">
+      <form class="" action="index.html" method="post">
+          <p style="margin-top:0px;padding:5px;padding-top:30px;padding-left:15px;margin-bottom:12px;">Total bill amount : </p>
+          <input type="text" name="" value="" placeholder="Amount" style="margin-left:20px;margin-bottom:0px" id="amount">
+          <p style="margin-top:0px;padding:5px;padding-top:20px;padding-left:15px;padding-bottom:0px;">How would you rate the service ? </p>
+          <select id="serviceEqual" style="margin-left: 20px; padding:10px;">
+            <option disabled selected value="0"  >--- Choose an option ---</option>
+            <option value="0.3">30% Excellent service</option>
+            <option value="0.2">20% Good service</option>
+            <option value="0.15">15% It was OK</option>
+            <option value="0.1">10% Bad</option>
+            <option value="0.05">5% Terrible</option>
+          </select>
+      </form>
+      <p style="margin-top:0px;padding:5px;padding-top:20px;padding-left:15px;margin-bottom:12px;">Split the bill among how many people ? </p>
+      <input type="text" name="" value="" placeholder="Number of people" style="margin-left:20px" id="people" >
+      <p></p>
+      <button type="button" name="button" id = 'button_one' onclick="calculate()">calculate</button>
+      <div class="result">
+        <h3 id="resultPara1"></h3>
+        <h3 id="resultPara2"></h3>
+      </div>
+    </div>
+    <script type="text/javascript" src="{% static 'tip_calculator.js' %}">
+
+    </script>
+  </body>
+</html>

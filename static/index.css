@@ -1,0 +1,28 @@
+body{
+  background-color: #0b445c;
+}
+h1
+{
+  text-align:center;
+  color: white;
+  font-size: 2rem;
+  background-color: red;
+  padding: 30px;
+}
+
+.row{
+  margin-top: 70px;
+}
+
+.card{
+  background-color: black;
+  color : white;
+  padding: 40px;
+}
+h2{
+  color: white;
+  font-size: 3rem;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 170px;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bank</title>
+    {% load static %}
+  </head>
+  <body>
+    <h1>Welcome to my Beginner's bank, please withdraw you required money...</h1>
+    <p><b>Enter your name, password and the amount you like to withdraw...</b></p>
+    <input type="text" placeholder="Name:" id="name">
+    <p><input type="password" placeholder="Password:" id="password"></p>
+    <p><input type="text" placeholder="Amount:" id="amount"></p>
+    <p><button type="button" name="button" style="padding:6px;border:2px solid blue;background-color:blue;color:white" onclick="withdraw()">Withdraw</button></p>
+    <p id='result'></p>
+    <script type="text/javascript" src="{% static 'beginners_bank.js' %}">
+
+    </script>
+  </body>
+</html>
